@@ -1,5 +1,5 @@
 "use client"
-import LoginForm from "./Component/page";
+import LoginForm from "./Login/loginfrom";
 
 export default function Home() {
   return (

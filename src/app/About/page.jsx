@@ -1,16 +1,15 @@
 "use client";
 import React from 'react';
 import { Button, Grid } from "@mui/material";
-import Header from "../Header/page";
-import { HighContrastProvider, useHighContrast,} from '../Highconstract/page';
-import HighContrastToggle from '../Highconstracttoogle/page';
+import Header from "../Components/page";
+import { useHighContrast } from '../Highconstract_toogle/layout';
+import Image from 'next/image';
 
 const Aboutus = () => {
   const { highContrast } = useHighContrast();
 
   return (
     <>
-    <HighContrastToggle/>
       <Header />
       <div>
         <h1 style={{ fontSize: "2em", fontWeight: "bold", maxWidth: "600px" }}>
@@ -32,9 +31,12 @@ const Aboutus = () => {
             about-page examples for inspiration.
           </p>
           <div style={{ maxWidth: "600px", margin: "20px auto", textAlign: "center" }}>
-            <img
-              src="https://st3.depositphotos.com/3108485/16036/i/450/depositphotos_160368926-stock-photo-hand-holding-a-laptop.jpg"
-              style={{ width: "100%", height: "auto" }}
+            <Image
+                src="/onehand.png"
+                alt="Laptop held in hand"
+                width={600}
+                height={400}
+                style={{ width: "100%", height: "auto" }}
             />
           </div>
         </div>
@@ -43,10 +45,6 @@ const Aboutus = () => {
   );
 }
 
-const App = () => (
-  <HighContrastProvider>
-    <Aboutus />
-  </HighContrastProvider>
-);
 
-export default App;
+
+export default Aboutus;

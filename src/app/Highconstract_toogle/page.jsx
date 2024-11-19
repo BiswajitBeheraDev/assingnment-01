@@ -1,6 +1,7 @@
+"use client"
 import React from 'react';
 import { Button, FormControlLabel, FormGroup, Switch } from '@mui/material';
-import { useHighContrast } from '../Highconstract/page';
+import { useHighContrast } from './layout';
 
 const HighContrastToggle = () => {
     const { highContrast, setHighContrast } = useHighContrast();
@@ -10,7 +11,7 @@ const HighContrastToggle = () => {
   }
   const handelsubmit=(e)=>{
     e.preventDefault()
-   window.location.assign('/Component')
+   window.location.assign('/')
   }
 
   return (

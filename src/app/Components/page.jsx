@@ -1,3 +1,5 @@
+"use client"
+
 import React, { useState } from 'react';
 import { Button, IconButton } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
@@ -30,9 +32,9 @@ const Header = () => {
       <div className="nav">
         {menuItems.map((item) => (
           <Link key={item.text} href={item.href}>
-            <Button
+            <Button 
               style={{ color: "black" }}
-              className={activeItem === item.text ? 'active' : ''}
+              className={activeItem === item.text ? 'active':''}
               onClick={() => handleItemClick(item.text)}
             >
                   {item.text}
