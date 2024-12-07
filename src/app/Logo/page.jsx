@@ -7,7 +7,6 @@ import Header from "../Components/page";
 const Logo = () => (
   <div>
     <Header />
-
     <h1 style={{ fontSize: "2em", fontWeight: "bold", marginTop: "20px", }}>
       Find the perfect Logo for Dude
     </h1>
