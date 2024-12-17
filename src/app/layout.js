@@ -2,7 +2,7 @@
 
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { HighContrastProvider } from "./Highconstract_toogle/layout";
+import { HighContrastProvider } from "./Highconstract_toogle/layoutt";
 import HighContrastToggle from "./Highconstract_toogle/page";
 import { usePathname } from "next/navigation";
 

@@ -1,7 +1,8 @@
-"use client"
+"use client" ;
+
 import React from 'react';
 import { Button, FormControlLabel, FormGroup, Switch } from '@mui/material';
-import { useHighContrast } from './layout';
+import { useHighContrast } from './layoutt';
 
 const HighContrastToggle = () => {
     const { highContrast, setHighContrast } = useHighContrast();

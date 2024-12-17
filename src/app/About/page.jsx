@@ -1,8 +1,9 @@
 "use client";
+
 import React from 'react';
 import { Button, Grid } from "@mui/material";
 import Header from "../Components/page";
-import { useHighContrast } from '../Highconstract_toogle/layout';
+import { useHighContrast } from '../Highconstract_toogle/layoutt';
 import Image from 'next/image';
 
 const Aboutus = () => {
